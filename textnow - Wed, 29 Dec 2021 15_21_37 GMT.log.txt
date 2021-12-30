@@ -1,0 +1,708 @@
+"[2021-12-29T15:14:10.677Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 9.95, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi
+[2021-12-29T15:14:10.892Z] INFO - Profile - setUpPhoneService() called
+[2021-12-29T15:14:11.478Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.506Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.521Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.522Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.523Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.524Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.532Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.533Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:11.794Z] DEBUG - phoneService - initialize() called with config = {\"phoneNumber\":\"8653552812\",\"legacySipInfo\":{\"id\":96,\"host\":\"prod.tncp.textnow.com\",\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\",\"proxy\":\"\",\"stun\":\"\",\"voicemail_url\":\"https://s3.amazonaws.com/TN-Prod-VoicemailGreetings/18ec0c667d674eceea79eebf6d240fb5fad1a11ebd9138763866df8f3f3d21ad.wav\",\"client_ip\":\"98.46.112.1\",\"ice_servers\":[{\"endpoint\":\"stun:ice-server.us-east-1.prod.tncp.textnow.com\",\"credential\":{\"expiry\":0,\"username\":\"\",\"password\":\"\"}},{\"endpoint\":\"turn:turn-global.prod.tncp.textnow.com\",\"credential\":{\"username\":\"1640831680:18653552812\",\"password\":\"+Ci0mp2w2sVqG7H7Nvm3aiEaa8Y=\",\"expiry\":1640831680}}]},\"sipInfo\":{\"tncp\":{\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\"},\"endpoints\":[{\"address\":\"udp://prod.tncp.textnow.com:5070\"},{\"address\":\"wss://prod.tncp.textnow.com:443\"}],\"features\":{\"inbound\":false,\"outbound_free\":true,\"outbound_paid\":false}},\"legacy\":{\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"e2e30432f26688b8752bfddc57f80c5c\"},\"endpoint\":\"enflick.layered.net\",\"features\":{\"inbound\":false,\"outbound_free\":false,\"outbound_paid\":false}}}}
+[2021-12-29T15:14:11.795Z] INFO - phoneService - setting up SipJsCallAdapter with config: {\"useWebProxy\":true,\"webProxySubdomain\":\"web1\",\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\"},\"endpoints\":[\"wss://prod.tncp.textnow.com/\"],\"enabled_for\":{\"outbound_free_enabled\":true,\"outbound_paid_enabled\":true,\"inbound_enabled\":true}}
+[2021-12-29T15:14:11.799Z] DEBUG - phoneServiceModule/eventRouter - registerConnectionEvents: registering connection events for sip-js
+[2021-12-29T15:14:11.801Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering outgoing calling events for sip-js
+[2021-12-29T15:14:11.802Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering incoming calling events for sip-js
+[2021-12-29T15:14:11.802Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering calling events for sip-js
+[2021-12-29T15:14:11.803Z] DEBUG - SipJsCallAdapter - initialize() called
+[2021-12-29T15:14:11.804Z] DEBUG - SipJsCallAdapter - _tryConnecting() called
+[2021-12-29T15:14:11.804Z] DEBUG - SipJsCallAdapter - _tryConnecting: starting connection attempt 1
+[2021-12-29T15:14:11.864Z] INFO - sip.ua - configuration parameters after validation:
+[2021-12-29T15:14:11.865Z] INFO - sip.ua - · viaHost: \"3gam20ronjna.invalid\"
+[2021-12-29T15:14:11.866Z] INFO - sip.ua - · uri: sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com
+[2021-12-29T15:14:11.866Z] INFO - sip.ua - · custom: \\
+[2021-12-29T15:14:11.867Z] INFO - sip.ua - · displayName: \"\"
+[2021-12-29T15:14:11.867Z] INFO - sip.ua - · password: NOT SHOWN
+[2021-12-29T15:14:11.867Z] INFO - sip.ua - · registerExpires: 600
+[2021-12-29T15:14:11.868Z] INFO - sip.ua - · register: false
+[2021-12-29T15:14:11.868Z] INFO - sip.ua - · registrarServer: sip:prod.tncp.textnow.com
+[2021-12-29T15:14:11.868Z] INFO - sip.ua - · transportConstructor: i
+[2021-12-29T15:14:11.868Z] INFO - sip.ua - · transportOptions: 
+[2021-12-29T15:14:11.868Z] INFO - sip.ua - · userAgentString: \"SIP.js/0.11.6\"
+[2021-12-29T15:14:11.869Z] INFO - sip.ua - · noAnswerTimeout: 60000
+[2021-12-29T15:14:11.869Z] INFO - sip.ua - · hackViaTcp: false
+[2021-12-29T15:14:11.869Z] INFO - sip.ua - · hackIpInContact: false
+[2021-12-29T15:14:11.869Z] INFO - sip.ua - · hackWssInTransport: false
+[2021-12-29T15:14:11.869Z] INFO - sip.ua - · hackAllowUnregisteredOptionTags: false
+[2021-12-29T15:14:11.869Z] INFO - sip.ua - · sessionDescriptionHandlerFactoryOptions: },\"modifiers\":[null]}
+[2021-12-29T15:14:11.870Z] INFO - sip.ua - · contactName: \"b6j9v5ao\"
+[2021-12-29T15:14:11.870Z] INFO - sip.ua - · contactTransport: \"ws\"
+[2021-12-29T15:14:11.870Z] INFO - sip.ua - · forceRport: false
+[2021-12-29T15:14:11.870Z] INFO - sip.ua - · autostart: false
+[2021-12-29T15:14:11.870Z] INFO - sip.ua - · autostop: true
+[2021-12-29T15:14:11.870Z] INFO - sip.ua - · rel100: \"none\"
+[2021-12-29T15:14:11.870Z] INFO - sip.ua - · dtmfType: \"rtp\"
+[2021-12-29T15:14:11.871Z] INFO - sip.ua - · replaces: \"none\"
+[2021-12-29T15:14:11.871Z] INFO - sip.ua - · sessionDescriptionHandlerFactory: function(e,t)
+[2021-12-29T15:14:11.872Z] INFO - sip.ua - · authenticationFactory: undefined
+[2021-12-29T15:14:11.872Z] INFO - sip.ua - · allowLegacyNotifications: false
+[2021-12-29T15:14:11.872Z] INFO - sip.ua - · allowOutOfDialogRefers: false
+[2021-12-29T15:14:11.872Z] INFO - sip.ua - · authorizationUser: \"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\"
+[2021-12-29T15:14:11.872Z] INFO - sip.ua - · instanceId: \"d1f9d911-4a79-4d96-b6ed-8f1f10abaa6f\"
+[2021-12-29T15:14:11.872Z] INFO - sip.ua - · sipjsId: \"j4r8j\"
+[2021-12-29T15:14:11.873Z] INFO - sip.ua - · hostportParams: \"prod.tncp.textnow.com\"
+[2021-12-29T15:14:11.890Z] INFO - sip.ua - user requested startup...
+[2021-12-29T15:14:11.899Z] INFO - sip.transport - configuration parameters after validation:
+[2021-12-29T15:14:11.899Z] INFO - sip.transport - · wsServers: []
+[2021-12-29T15:14:11.900Z] INFO - sip.transport - · connectionTimeout: 5
+[2021-12-29T15:14:11.900Z] INFO - sip.transport - · maxReconnectionAttempts: 0
+[2021-12-29T15:14:11.900Z] INFO - sip.transport - · reconnectionTimeout: 4
+[2021-12-29T15:14:11.900Z] INFO - sip.transport - · keepAliveInterval: 0
+[2021-12-29T15:14:11.900Z] INFO - sip.transport - · keepAliveDebounce: 10
+[2021-12-29T15:14:11.901Z] INFO - sip.transport - · traceSip: true
+[2021-12-29T15:14:11.903Z] INFO - sip.transport - connecting to WebSocket wss://web1.prod.tncp.textnow.com/
+[2021-12-29T15:14:12.321Z] INFO - SipJsCallAdapter - _tryConnecting: sipjs user agent transport connected
+[2021-12-29T15:14:12.322Z] DEBUG - SipJsCallAdapter - _register()
+[2021-12-29T15:14:12.326Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - REGISTER sip:prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 3gam20ronjna.invalid;branch=z9hG4bK926919\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=r82jnpnekf\r
+Call-ID: hn16aj4p3ub8knool7tih8\r
+CSeq: 1092 REGISTER\r
+Contact: <sip:b6j9v5ao@3gam20ronjna.invalid;transport=ws>;reg-id=1;+sip.instance=\"<urn:uuid:d1f9d911-4a79-4d96-b6ed-8f1f10abaa6f>\";expires=600\r
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER\r
+Supported: path, gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:14:12.327Z] INFO - sip.transport - WebSocket wss://web1.prod.tncp.textnow.com/ connected
+[2021-12-29T15:14:12.426Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 401 Unauthorized\r
+Via: SIP/2.0/WSS 3gam20ronjna.invalid;rport=35232;received=10.241.40.27;branch=z9hG4bK926919\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=bddf01204f7ddc64078da14557abcaf7.bf9a0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=r82jnpnekf\r
+Call-ID: hn16aj4p3ub8knool7tih8\r
+CSeq: 1092 REGISTER\r
+WWW-Authenticate: Digest realm=\"prod.tncp.textnow.com\", nonce=\"Ycx8aWHMez07DqUImqIPN+4zKL/IvY7S\"\r
+Server: sip-registrar2.tncp\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:14:12.481Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - REGISTER sip:prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 3gam20ronjna.invalid;branch=z9hG4bK8611470\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=r82jnpnekf\r
+Call-ID: hn16aj4p3ub8knool7tih8\r
+CSeq: 1093 REGISTER\r
+Authorization: Digest algorithm=MD5, username=\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\", realm=\"prod.tncp.textnow.com\", nonce=\"Ycx8aWHMez07DqUImqIPN+4zKL/IvY7S\", uri=\"sip:prod.tncp.textnow.com\", response=\"ac06c0a7133ec2773304ff9e9a2ec191\"\r
+Contact: <sip:b6j9v5ao@3gam20ronjna.invalid;transport=ws>;reg-id=1;+sip.instance=\"<urn:uuid:d1f9d911-4a79-4d96-b6ed-8f1f10abaa6f>\";expires=600\r
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER\r
+Supported: path, gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:14:12.835Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 200 OK\r
+Via: SIP/2.0/WSS 3gam20ronjna.invalid;rport=35232;received=10.241.40.27;branch=z9hG4bK8611470\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=bddf01204f7ddc64078da14557abcaf7.bf9a0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=r82jnpnekf\r
+Call-ID: hn16aj4p3ub8knool7tih8\r
+CSeq: 1093 REGISTER\r
+Contact: <sip:b6j9v5ao@3gam20ronjna.invalid;transport=ws>;expires=522;pub-gruu=\"sip:18653552812@prod.tncp.textnow.com;gr=urn:uuid:d1f9d911-4a79-4d96-b6ed-8f1f10abaa6f\";temp-gruu=\"sip:uloc-61786201-42ec-468b98-b330275c@prod.tncp.textnow.com;gr\";+sip.instance=\"<urn:uuid:d1f9d911-4a79-4d96-b6ed-8f1f10abaa6f>\";reg-id=1\r
+Path: <sip:2WcMtXLvszgVPQUK8SkiH5AK8SgbiaA=@10.241.41.34;lr;ob>\r
+Supported: outbound\r
+Require: outbound\r
+Server: sip-registrar2.tncp\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:14:12.919Z] DEBUG - phoneServiceModule/eventRouter - registerConnectionEvents: event received: phone-service-ready, adapter: sip-js
+[2021-12-29T15:14:12.969Z] LOG - BadgeService - Setting badge val: 0"
+"[2021-12-29T15:14:22.968Z] DEBUG - permissionService - handleMicrophoneAccessGranted()
+[2021-12-29T15:14:22.994Z] INFO - phoneServiceModule/eventRouter - phone service ready
+[2021-12-29T15:14:22.995Z] DEBUG - phoneServiceModule/eventRouter - setServiceState(ready)
+[2021-12-29T15:14:24.007Z] DEBUG - punt - Punt start succeeded
+[2021-12-29T15:14:26.163Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 4.9, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi
+[2021-12-29T15:14:32.172Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 3.7, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi"
+"[2021-12-29T15:14:34.136Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 2.85, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi
+[2021-12-29T15:14:43.014Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - OPTIONS sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 3gam20ronjna.invalid;branch=z9hG4bK6773177\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=4q46dr3j36\r
+Call-ID: j4r8jck0ch2bu5bt4d6q\r
+CSeq: 1167 OPTIONS\r
+Supported: outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:14:43.082Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 200 OK\r
+Via: SIP/2.0/WSS 3gam20ronjna.invalid;branch=z9hG4bK6773177;rport=35232;received=10.241.40.27\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=23597fe29f9d45d84165b33294bbd0d8.3afe0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=4q46dr3j36\r
+Call-ID: j4r8jck0ch2bu5bt4d6q\r
+CSeq: 1167 OPTIONS\r
+Server: sip-proxy-ws2.tncp\r
+Content-Length: 0\r
+\r
+
+"
+"[2021-12-29T15:14:59.523Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:59.605Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:59.626Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:59.627Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:59.628Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:59.628Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:59.642Z] LOG - Group - Creating group: null
+[2021-12-29T15:14:59.643Z] LOG - Group - Creating group: null
+[2021-12-29T15:15:00.413Z] INFO - Profile - setUpPhoneService() called
+[2021-12-29T15:15:00.659Z] LOG - BadgeService - Setting badge val: 0
+[2021-12-29T15:15:08.183Z] DEBUG - phoneService - initialize() called with config = {\"phoneNumber\":\"8653552812\",\"legacySipInfo\":{\"id\":96,\"host\":\"prod.tncp.textnow.com\",\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\",\"proxy\":\"\",\"stun\":\"\",\"voicemail_url\":\"https://s3.amazonaws.com/TN-Prod-VoicemailGreetings/18ec0c667d674eceea79eebf6d240fb5fad1a11ebd9138763866df8f3f3d21ad.wav\",\"client_ip\":\"98.46.112.1\",\"ice_servers\":[{\"endpoint\":\"stun:ice-server.us-east-1.prod.tncp.textnow.com\",\"credential\":{\"expiry\":0,\"username\":\"\",\"password\":\"\"}},{\"endpoint\":\"turn:turn-global.prod.tncp.textnow.com\",\"credential\":{\"username\":\"1640831680:18653552812\",\"password\":\"+Ci0mp2w2sVqG7H7Nvm3aiEaa8Y=\",\"expiry\":1640831680}}]},\"sipInfo\":{\"tncp\":{\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\"},\"endpoints\":[{\"address\":\"udp://prod.tncp.textnow.com:5070\"},{\"address\":\"wss://prod.tncp.textnow.com:443\"}],\"features\":{\"inbound\":false,\"outbound_free\":true,\"outbound_paid\":false}},\"legacy\":{\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"e2e30432f26688b8752bfddc57f80c5c\"},\"endpoint\":\"enflick.layered.net\",\"features\":{\"inbound\":false,\"outbound_free\":false,\"outbound_paid\":false}}}}
+[2021-12-29T15:15:08.184Z] INFO - phoneService - setting up SipJsCallAdapter with config: {\"useWebProxy\":true,\"webProxySubdomain\":\"web1\",\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\"},\"endpoints\":[\"wss://prod.tncp.textnow.com/\"],\"enabled_for\":{\"outbound_free_enabled\":true,\"outbound_paid_enabled\":true,\"inbound_enabled\":true}}
+[2021-12-29T15:15:08.186Z] DEBUG - phoneServiceModule/eventRouter - registerConnectionEvents: registering connection events for sip-js
+[2021-12-29T15:15:08.187Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering outgoing calling events for sip-js
+[2021-12-29T15:15:08.187Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering incoming calling events for sip-js
+[2021-12-29T15:15:08.187Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering calling events for sip-js
+[2021-12-29T15:15:08.187Z] DEBUG - SipJsCallAdapter - initialize() called
+[2021-12-29T15:15:08.188Z] DEBUG - SipJsCallAdapter - _tryConnecting() called
+[2021-12-29T15:15:08.188Z] DEBUG - SipJsCallAdapter - _tryConnecting: starting connection attempt 1
+[2021-12-29T15:15:08.207Z] INFO - sip.ua - configuration parameters after validation:
+[2021-12-29T15:15:08.208Z] INFO - sip.ua - · viaHost: \"1ebanto4bj85.invalid\"
+[2021-12-29T15:15:08.208Z] INFO - sip.ua - · uri: sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · custom: \\
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · displayName: \"\"
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · password: NOT SHOWN
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · registerExpires: 600
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · register: false
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · registrarServer: sip:prod.tncp.textnow.com
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · transportConstructor: i
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · transportOptions: 
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · userAgentString: \"SIP.js/0.11.6\"
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · noAnswerTimeout: 60000
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · hackViaTcp: false
+[2021-12-29T15:15:08.209Z] INFO - sip.ua - · hackIpInContact: false
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · hackWssInTransport: false
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · hackAllowUnregisteredOptionTags: false
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · sessionDescriptionHandlerFactoryOptions: },\"modifiers\":[null]}
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · contactName: \"7hhp7ae8\"
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · contactTransport: \"ws\"
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · forceRport: false
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · autostart: false
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · autostop: true
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · rel100: \"none\"
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · dtmfType: \"rtp\"
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · replaces: \"none\"
+[2021-12-29T15:15:08.210Z] INFO - sip.ua - · sessionDescriptionHandlerFactory: function(e,t)
+[2021-12-29T15:15:08.211Z] INFO - sip.ua - · authenticationFactory: undefined
+[2021-12-29T15:15:08.211Z] INFO - sip.ua - · allowLegacyNotifications: false
+[2021-12-29T15:15:08.211Z] INFO - sip.ua - · allowOutOfDialogRefers: false
+[2021-12-29T15:15:08.211Z] INFO - sip.ua - · authorizationUser: \"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\"
+[2021-12-29T15:15:08.211Z] INFO - sip.ua - · instanceId: \"be5390c9-3fca-48ec-80b3-5cae52b5a926\"
+[2021-12-29T15:15:08.211Z] INFO - sip.ua - · sipjsId: \"fd4ka\"
+[2021-12-29T15:15:08.211Z] INFO - sip.ua - · hostportParams: \"prod.tncp.textnow.com\"
+[2021-12-29T15:15:08.221Z] INFO - sip.ua - user requested startup...
+[2021-12-29T15:15:08.223Z] INFO - sip.transport - configuration parameters after validation:
+[2021-12-29T15:15:08.223Z] INFO - sip.transport - · wsServers: []
+[2021-12-29T15:15:08.224Z] INFO - sip.transport - · connectionTimeout: 5
+[2021-12-29T15:15:08.224Z] INFO - sip.transport - · maxReconnectionAttempts: 0
+[2021-12-29T15:15:08.224Z] INFO - sip.transport - · reconnectionTimeout: 4
+[2021-12-29T15:15:08.224Z] INFO - sip.transport - · keepAliveInterval: 0
+[2021-12-29T15:15:08.224Z] INFO - sip.transport - · keepAliveDebounce: 10
+[2021-12-29T15:15:08.224Z] INFO - sip.transport - · traceSip: true
+[2021-12-29T15:15:08.225Z] INFO - sip.transport - connecting to WebSocket wss://web1.prod.tncp.textnow.com/
+[2021-12-29T15:15:09.117Z] INFO - SipJsCallAdapter - _tryConnecting: sipjs user agent transport connected
+[2021-12-29T15:15:09.118Z] DEBUG - SipJsCallAdapter - _register()
+[2021-12-29T15:15:09.121Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - REGISTER sip:prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 1ebanto4bj85.invalid;branch=z9hG4bK2165576\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=3rfjjtj2rp\r
+Call-ID: mkk6ti56snk2dorc18l4ml\r
+CSeq: 4935 REGISTER\r
+Contact: <sip:7hhp7ae8@1ebanto4bj85.invalid;transport=ws>;reg-id=1;+sip.instance=\"<urn:uuid:be5390c9-3fca-48ec-80b3-5cae52b5a926>\";expires=600\r
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER\r
+Supported: path, gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:15:09.122Z] INFO - sip.transport - WebSocket wss://web1.prod.tncp.textnow.com/ connected
+[2021-12-29T15:15:09.246Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 401 Unauthorized\r
+Via: SIP/2.0/WSS 1ebanto4bj85.invalid;rport=41392;received=10.241.40.27;branch=z9hG4bK2165576\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=bddf01204f7ddc64078da14557abcaf7.bf9a0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=3rfjjtj2rp\r
+Call-ID: mkk6ti56snk2dorc18l4ml\r
+CSeq: 4935 REGISTER\r
+WWW-Authenticate: Digest realm=\"prod.tncp.textnow.com\", nonce=\"Ycx8omHMe3ZhkIQhu0O0vi03bKqOm2Uy\"\r
+Server: sip-registrar2.tncp\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:15:09.278Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - REGISTER sip:prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 1ebanto4bj85.invalid;branch=z9hG4bK6973748\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=3rfjjtj2rp\r
+Call-ID: mkk6ti56snk2dorc18l4ml\r
+CSeq: 4936 REGISTER\r
+Authorization: Digest algorithm=MD5, username=\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\", realm=\"prod.tncp.textnow.com\", nonce=\"Ycx8omHMe3ZhkIQhu0O0vi03bKqOm2Uy\", uri=\"sip:prod.tncp.textnow.com\", response=\"3a654e6beda7858af42a4e33c9aa13e4\"\r
+Contact: <sip:7hhp7ae8@1ebanto4bj85.invalid;transport=ws>;reg-id=1;+sip.instance=\"<urn:uuid:be5390c9-3fca-48ec-80b3-5cae52b5a926>\";expires=600\r
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER\r
+Supported: path, gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:15:09.406Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 200 OK\r
+Via: SIP/2.0/WSS 1ebanto4bj85.invalid;rport=41392;received=10.241.40.27;branch=z9hG4bK6973748\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=bddf01204f7ddc64078da14557abcaf7.bf9a0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=3rfjjtj2rp\r
+Call-ID: mkk6ti56snk2dorc18l4ml\r
+CSeq: 4936 REGISTER\r
+Contact: <sip:7hhp7ae8@1ebanto4bj85.invalid;transport=ws>;expires=502;pub-gruu=\"sip:18653552812@prod.tncp.textnow.com;gr=urn:uuid:be5390c9-3fca-48ec-80b3-5cae52b5a926\";temp-gruu=\"sip:uloc-61786201-42e9-c04a98-b330275c@prod.tncp.textnow.com;gr\";+sip.instance=\"<urn:uuid:be5390c9-3fca-48ec-80b3-5cae52b5a926>\";reg-id=1\r
+Path: <sip:s/CEOuKbYN9ozgUK8SkiH5AK8SgbobA=@10.241.41.34;lr;ob>\r
+Supported: outbound\r
+Require: outbound\r
+Server: sip-registrar2.tncp\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:15:09.431Z] DEBUG - phoneServiceModule/eventRouter - registerConnectionEvents: event received: phone-service-ready, adapter: sip-js"
+"[2021-12-29T15:15:13.769Z] DEBUG - permissionService - handleMicrophoneAccessGranted()
+[2021-12-29T15:15:13.800Z] INFO - phoneServiceModule/eventRouter - phone service ready
+[2021-12-29T15:15:13.801Z] DEBUG - phoneServiceModule/eventRouter - setServiceState(ready)
+[2021-12-29T15:15:18.977Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 3.45, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi"
+"[2021-12-29T15:15:39.486Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - OPTIONS sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 1ebanto4bj85.invalid;branch=z9hG4bK3940329\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=6op2cq21c2\r
+Call-ID: fd4kabp30n52o96t9pas\r
+CSeq: 7227 OPTIONS\r
+Supported: outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:15:39.580Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 200 OK\r
+Via: SIP/2.0/WSS 1ebanto4bj85.invalid;branch=z9hG4bK3940329;rport=41392;received=10.241.40.27\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=23597fe29f9d45d84165b33294bbd0d8.c46a0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=6op2cq21c2\r
+Call-ID: fd4kabp30n52o96t9pas\r
+CSeq: 7227 OPTIONS\r
+Server: sip-proxy-ws2.tncp\r
+Content-Length: 0\r
+\r
+
+"
+"[2021-12-29T15:20:14.898Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:14.929Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:14.935Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:14.935Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:14.935Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:14.935Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:14.938Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:14.939Z] LOG - Group - Creating group: null
+[2021-12-29T15:20:15.237Z] INFO - Profile - setUpPhoneService() called
+[2021-12-29T15:20:15.376Z] LOG - BadgeService - Setting badge val: 0
+[2021-12-29T15:20:18.043Z] DEBUG - phoneService - initialize() called with config = {\"phoneNumber\":\"8653552812\",\"legacySipInfo\":{\"id\":96,\"host\":\"prod.tncp.textnow.com\",\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\",\"proxy\":\"\",\"stun\":\"\",\"voicemail_url\":\"https://s3.amazonaws.com/TN-Prod-VoicemailGreetings/18ec0c667d674eceea79eebf6d240fb5fad1a11ebd9138763866df8f3f3d21ad.wav\",\"client_ip\":\"98.46.112.1\",\"ice_servers\":[{\"endpoint\":\"stun:ice-server.us-east-1.prod.tncp.textnow.com\",\"credential\":{\"expiry\":0,\"username\":\"\",\"password\":\"\"}},{\"endpoint\":\"turn:turn-global.prod.tncp.textnow.com\",\"credential\":{\"username\":\"1640877396:18653552812\",\"password\":\"AeQdJYe07OZLXGsWPdq6c/XwljE=\",\"expiry\":1640877396}}]},\"sipInfo\":{\"tncp\":{\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\"},\"endpoints\":[{\"address\":\"udp://prod.tncp.textnow.com:5070\"},{\"address\":\"wss://prod.tncp.textnow.com:443\"}],\"features\":{\"inbound\":false,\"outbound_free\":true,\"outbound_paid\":false}},\"legacy\":{\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"e2e30432f26688b8752bfddc57f80c5c\"},\"endpoint\":\"enflick.layered.net\",\"features\":{\"inbound\":false,\"outbound_free\":false,\"outbound_paid\":false}}}}
+[2021-12-29T15:20:18.046Z] INFO - phoneService - setting up SipJsCallAdapter with config: {\"useWebProxy\":true,\"webProxySubdomain\":\"web1\",\"credentials\":{\"username\":\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\",\"password\":\"56042e4141ac1a6c9b336d9f55533833\"},\"endpoints\":[\"wss://prod.tncp.textnow.com/\"],\"enabled_for\":{\"outbound_free_enabled\":true,\"outbound_paid_enabled\":true,\"inbound_enabled\":true}}
+[2021-12-29T15:20:18.049Z] DEBUG - phoneServiceModule/eventRouter - registerConnectionEvents: registering connection events for sip-js
+[2021-12-29T15:20:18.051Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering outgoing calling events for sip-js
+[2021-12-29T15:20:18.052Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering incoming calling events for sip-js
+[2021-12-29T15:20:18.052Z] DEBUG - phoneServiceModule/eventRouter - registerCallingEvents: registering calling events for sip-js
+[2021-12-29T15:20:18.053Z] DEBUG - SipJsCallAdapter - initialize() called
+[2021-12-29T15:20:18.054Z] DEBUG - SipJsCallAdapter - _tryConnecting() called
+[2021-12-29T15:20:18.055Z] DEBUG - SipJsCallAdapter - _tryConnecting: starting connection attempt 1
+[2021-12-29T15:20:18.107Z] INFO - sip.ua - configuration parameters after validation:
+[2021-12-29T15:20:18.107Z] INFO - sip.ua - · viaHost: \"n8926028kl56.invalid\"
+[2021-12-29T15:20:18.108Z] INFO - sip.ua - · uri: sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com
+[2021-12-29T15:20:18.109Z] INFO - sip.ua - · custom: \\
+[2021-12-29T15:20:18.109Z] INFO - sip.ua - · displayName: \"\"
+[2021-12-29T15:20:18.109Z] INFO - sip.ua - · password: NOT SHOWN
+[2021-12-29T15:20:18.110Z] INFO - sip.ua - · registerExpires: 600
+[2021-12-29T15:20:18.110Z] INFO - sip.ua - · register: false
+[2021-12-29T15:20:18.110Z] INFO - sip.ua - · registrarServer: sip:prod.tncp.textnow.com
+[2021-12-29T15:20:18.110Z] INFO - sip.ua - · transportConstructor: i
+[2021-12-29T15:20:18.111Z] INFO - sip.ua - · transportOptions: 
+[2021-12-29T15:20:18.111Z] INFO - sip.ua - · userAgentString: \"SIP.js/0.11.6\"
+[2021-12-29T15:20:18.111Z] INFO - sip.ua - · noAnswerTimeout: 60000
+[2021-12-29T15:20:18.111Z] INFO - sip.ua - · hackViaTcp: false
+[2021-12-29T15:20:18.112Z] INFO - sip.ua - · hackIpInContact: false
+[2021-12-29T15:20:18.112Z] INFO - sip.ua - · hackWssInTransport: false
+[2021-12-29T15:20:18.112Z] INFO - sip.ua - · hackAllowUnregisteredOptionTags: false
+[2021-12-29T15:20:18.112Z] INFO - sip.ua - · sessionDescriptionHandlerFactoryOptions: },\"modifiers\":[null]}
+[2021-12-29T15:20:18.113Z] INFO - sip.ua - · contactName: \"d1f1gdsh\"
+[2021-12-29T15:20:18.113Z] INFO - sip.ua - · contactTransport: \"ws\"
+[2021-12-29T15:20:18.113Z] INFO - sip.ua - · forceRport: false
+[2021-12-29T15:20:18.113Z] INFO - sip.ua - · autostart: false
+[2021-12-29T15:20:18.114Z] INFO - sip.ua - · autostop: true
+[2021-12-29T15:20:18.114Z] INFO - sip.ua - · rel100: \"none\"
+[2021-12-29T15:20:18.114Z] INFO - sip.ua - · dtmfType: \"rtp\"
+[2021-12-29T15:20:18.114Z] INFO - sip.ua - · replaces: \"none\"
+[2021-12-29T15:20:18.114Z] INFO - sip.ua - · sessionDescriptionHandlerFactory: function(e,t)
+[2021-12-29T15:20:18.115Z] INFO - sip.ua - · authenticationFactory: undefined
+[2021-12-29T15:20:18.115Z] INFO - sip.ua - · allowLegacyNotifications: false
+[2021-12-29T15:20:18.115Z] INFO - sip.ua - · allowOutOfDialogRefers: false
+[2021-12-29T15:20:18.116Z] INFO - sip.ua - · authorizationUser: \"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\"
+[2021-12-29T15:20:18.116Z] INFO - sip.ua - · instanceId: \"1bab940e-f087-4f7c-9e6f-5e4d08d913f3\"
+[2021-12-29T15:20:18.116Z] INFO - sip.ua - · sipjsId: \"8j3jf\"
+[2021-12-29T15:20:18.116Z] INFO - sip.ua - · hostportParams: \"prod.tncp.textnow.com\"
+[2021-12-29T15:20:18.134Z] INFO - sip.ua - user requested startup...
+[2021-12-29T15:20:18.141Z] INFO - sip.transport - configuration parameters after validation:
+[2021-12-29T15:20:18.141Z] INFO - sip.transport - · wsServers: []
+[2021-12-29T15:20:18.142Z] INFO - sip.transport - · connectionTimeout: 5
+[2021-12-29T15:20:18.142Z] INFO - sip.transport - · maxReconnectionAttempts: 0
+[2021-12-29T15:20:18.142Z] INFO - sip.transport - · reconnectionTimeout: 4
+[2021-12-29T15:20:18.142Z] INFO - sip.transport - · keepAliveInterval: 0
+[2021-12-29T15:20:18.142Z] INFO - sip.transport - · keepAliveDebounce: 10
+[2021-12-29T15:20:18.142Z] INFO - sip.transport - · traceSip: true
+[2021-12-29T15:20:18.144Z] INFO - sip.transport - connecting to WebSocket wss://web1.prod.tncp.textnow.com/
+[2021-12-29T15:20:21.491Z] WARN - SipJsCallAdapter - _tryConnecting: websocket connection timeout expired, closing websocket
+[2021-12-29T15:20:21.492Z] WARN - sip.transport - Transport error: [object Event]
+[2021-12-29T15:20:21.494Z] INFO - sip.transport - WebSocket disconnected (code: 1006)
+[2021-12-29T15:20:21.495Z] WARN - SipJsCallAdapter - _tryConnecting: sipjs transport disconnected, code = [1006], reason = []
+[2021-12-29T15:20:21.496Z] DEBUG - phoneServiceModule/eventRouter - registerConnectionEvents: event received: connecting, adapter: sip-js
+[2021-12-29T15:20:21.497Z] DEBUG - phoneServiceModule/eventRouter - setServiceState(connecting)
+[2021-12-29T15:20:23.869Z] DEBUG - SipJsCallAdapter - _tryConnecting: setting backoff timer to 380ms
+[2021-12-29T15:20:23.870Z] DEBUG - SipJsCallAdapter - closeConnection()
+[2021-12-29T15:20:23.871Z] INFO - sip.ua - user requested closure...
+[2021-12-29T15:20:23.871Z] INFO - sip.ua - closing registerContext
+[2021-12-29T15:20:23.872Z] INFO - sip.transport - Attempting to transition status from STATUS_CONNECTING to STATUS_CLOSING
+[2021-12-29T15:20:23.872Z] WARN - sip.transport - Tried to assert STATUS_OPEN but is currently STATUS_CONNECTING
+[2021-12-29T15:20:23.873Z] WARN - sip.transport - Status transition failed - result: no-op - reason: either gave an nonexistent status or attempted illegal transition
+[2021-12-29T15:20:23.873Z] WARN - sip.transport - WebSocket abrupt disconnection
+[2021-12-29T15:20:23.874Z] WARN - sip.transport - maximum reconnection attempts for WebSocket wss://web1.prod.tncp.textnow.com/
+[2021-12-29T15:20:23.874Z] INFO - sip.transport - transport wss://web1.prod.tncp.textnow.com/ failed | connection state set to 'error'
+[2021-12-29T15:20:24.499Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 6.4, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi
+[2021-12-29T15:20:24.973Z] DEBUG - SipJsCallAdapter - _tryConnecting: backoff timer expired
+[2021-12-29T15:20:24.974Z] DEBUG - SipJsCallAdapter - _tryConnecting() called
+[2021-12-29T15:20:24.974Z] DEBUG - SipJsCallAdapter - _tryConnecting: starting connection attempt 2
+[2021-12-29T15:20:24.985Z] INFO - sip.ua - configuration parameters after validation:
+[2021-12-29T15:20:24.986Z] INFO - sip.ua - · viaHost: \"7acp371q6b3d.invalid\"
+[2021-12-29T15:20:24.986Z] INFO - sip.ua - · uri: sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com
+[2021-12-29T15:20:24.986Z] INFO - sip.ua - · custom: \\
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · displayName: \"\"
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · password: NOT SHOWN
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · registerExpires: 600
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · register: false
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · registrarServer: sip:prod.tncp.textnow.com
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · transportConstructor: i
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · transportOptions: 
+[2021-12-29T15:20:24.987Z] INFO - sip.ua - · userAgentString: \"SIP.js/0.11.6\"
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · noAnswerTimeout: 60000
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · hackViaTcp: false
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · hackIpInContact: false
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · hackWssInTransport: false
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · hackAllowUnregisteredOptionTags: false
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · sessionDescriptionHandlerFactoryOptions: },\"modifiers\":[null]}
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · contactName: \"f2c7cqt8\"
+[2021-12-29T15:20:24.988Z] INFO - sip.ua - · contactTransport: \"ws\"
+[2021-12-29T15:20:24.989Z] INFO - sip.ua - · forceRport: false
+[2021-12-29T15:20:24.989Z] INFO - sip.ua - · autostart: false
+[2021-12-29T15:20:24.989Z] INFO - sip.ua - · autostop: true
+[2021-12-29T15:20:24.989Z] INFO - sip.ua - · rel100: \"none\"
+[2021-12-29T15:20:24.989Z] INFO - sip.ua - · dtmfType: \"rtp\"
+[2021-12-29T15:20:24.989Z] INFO - sip.ua - · replaces: \"none\"
+[2021-12-29T15:20:24.989Z] INFO - sip.ua - · sessionDescriptionHandlerFactory: function(e,t)
+[2021-12-29T15:20:24.990Z] INFO - sip.ua - · authenticationFactory: undefined
+[2021-12-29T15:20:24.990Z] INFO - sip.ua - · allowLegacyNotifications: false
+[2021-12-29T15:20:24.990Z] INFO - sip.ua - · allowOutOfDialogRefers: false
+[2021-12-29T15:20:24.990Z] INFO - sip.ua - · authorizationUser: \"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\"
+[2021-12-29T15:20:24.990Z] INFO - sip.ua - · instanceId: \"429fffd5-d27b-43e7-b244-b753d808b710\"
+[2021-12-29T15:20:24.990Z] INFO - sip.ua - · sipjsId: \"hna91\"
+[2021-12-29T15:20:24.990Z] INFO - sip.ua - · hostportParams: \"prod.tncp.textnow.com\"
+[2021-12-29T15:20:24.994Z] INFO - sip.ua - user requested startup...
+[2021-12-29T15:20:24.996Z] INFO - sip.transport - configuration parameters after validation:
+[2021-12-29T15:20:24.996Z] INFO - sip.transport - · wsServers: []
+[2021-12-29T15:20:24.997Z] INFO - sip.transport - · connectionTimeout: 5
+[2021-12-29T15:20:24.997Z] INFO - sip.transport - · maxReconnectionAttempts: 0
+[2021-12-29T15:20:24.997Z] INFO - sip.transport - · reconnectionTimeout: 4
+[2021-12-29T15:20:24.997Z] INFO - sip.transport - · keepAliveInterval: 0
+[2021-12-29T15:20:24.997Z] INFO - sip.transport - · keepAliveDebounce: 10
+[2021-12-29T15:20:24.997Z] INFO - sip.transport - · traceSip: true
+[2021-12-29T15:20:24.997Z] INFO - sip.transport - connecting to WebSocket wss://web1.prod.tncp.textnow.com/"
+"[2021-12-29T15:20:26.566Z] INFO - SipJsCallAdapter - _tryConnecting: sipjs user agent transport connected
+[2021-12-29T15:20:26.567Z] DEBUG - SipJsCallAdapter - _register()
+[2021-12-29T15:20:26.571Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - REGISTER sip:prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;branch=z9hG4bK7598280\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=m0ee3og3vt\r
+Call-ID: 5umc38ttril7772omkipgv\r
+CSeq: 5409 REGISTER\r
+Contact: <sip:f2c7cqt8@7acp371q6b3d.invalid;transport=ws>;reg-id=1;+sip.instance=\"<urn:uuid:429fffd5-d27b-43e7-b244-b753d808b710>\";expires=600\r
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER\r
+Supported: path, gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:26.573Z] INFO - sip.transport - WebSocket wss://web1.prod.tncp.textnow.com/ connected
+[2021-12-29T15:20:26.680Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 401 Unauthorized\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;rport=20024;received=10.241.48.222;branch=z9hG4bK7598280\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=bddf01204f7ddc64078da14557abcaf7.bf9a0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=m0ee3og3vt\r
+Call-ID: 5umc38ttril7772omkipgv\r
+CSeq: 5409 REGISTER\r
+WWW-Authenticate: Digest realm=\"prod.tncp.textnow.com\", nonce=\"Ycx932HMfLNysmv8+wEqH0jRj4qkFaGW\"\r
+Server: sip-registrar2.tncp\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:26.755Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - REGISTER sip:prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;branch=z9hG4bK1938037\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=m0ee3og3vt\r
+Call-ID: 5umc38ttril7772omkipgv\r
+CSeq: 5410 REGISTER\r
+Authorization: Digest algorithm=MD5, username=\"18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0\", realm=\"prod.tncp.textnow.com\", nonce=\"Ycx932HMfLNysmv8+wEqH0jRj4qkFaGW\", uri=\"sip:prod.tncp.textnow.com\", response=\"ef1c3f673e2683747791ea90f10a9834\"\r
+Contact: <sip:f2c7cqt8@7acp371q6b3d.invalid;transport=ws>;reg-id=1;+sip.instance=\"<urn:uuid:429fffd5-d27b-43e7-b244-b753d808b710>\";expires=600\r
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER\r
+Supported: path, gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:26.818Z] DEBUG - permissionService - handleMicrophoneAccessGranted()
+[2021-12-29T15:20:26.842Z] INFO - phoneServiceModule/eventRouter - phone service ready
+[2021-12-29T15:20:26.843Z] DEBUG - phoneServiceModule/eventRouter - setServiceState(ready)
+[2021-12-29T15:20:26.970Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 200 OK\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;rport=20024;received=10.241.48.222;branch=z9hG4bK1938037\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=bddf01204f7ddc64078da14557abcaf7.bf9a0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=m0ee3og3vt\r
+Call-ID: 5umc38ttril7772omkipgv\r
+CSeq: 5410 REGISTER\r
+Contact: <sip:7hhp7ae8@1ebanto4bj85.invalid;transport=ws>;expires=184;pub-gruu=\"sip:18653552812@prod.tncp.textnow.com;gr=urn:uuid:be5390c9-3fca-48ec-80b3-5cae52b5a926\";temp-gruu=\"sip:uloc-61786201-42e9-c04a98-b330275c@prod.tncp.textnow.com;gr\";+sip.instance=\"<urn:uuid:be5390c9-3fca-48ec-80b3-5cae52b5a926>\";reg-id=1, <sip:f2c7cqt8@7acp371q6b3d.invalid;transport=ws>;expires=448;pub-gruu=\"sip:18653552812@prod.tncp.textnow.com;gr=urn:uuid:429fffd5-d27b-43e7-b244-b753d808b710\";temp-gruu=\"sip:uloc-61786201-4303-882b98-b330275c@prod.tncp.textnow.com;gr\";+sip.instance=\"<urn:uuid:429fffd5-d27b-43e7-b244-b753d808b710>\";reg-id=1\r
+Path: <sip:C3VsTCO8xmf2gQUK8SkiH5AK8TDeTjg=@10.241.41.34;lr;ob>\r
+Supported: outbound\r
+Require: outbound\r
+Server: sip-registrar2.tncp\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:27.049Z] DEBUG - phoneServiceModule/eventRouter - registerConnectionEvents: event received: phone-service-ready, adapter: sip-js
+[2021-12-29T15:20:27.050Z] INFO - phoneServiceModule/eventRouter - phone service ready
+[2021-12-29T15:20:27.050Z] DEBUG - phoneServiceModule/eventRouter - setServiceState(ready)
+[2021-12-29T15:20:31.929Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 5.05, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi
+[2021-12-29T15:20:32.461Z] INFO - CallDetailsLog - CALL_DETAILS_NETWORK_CHANGED: downlink: 3.8, downlinkMax: Infinity, effectiveType: 4g, rtt: 50, type: wifi"
+"[2021-12-29T15:20:46.729Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - INVITE sip:18653552812@prod.tncp.textnow.com SIP/2.0\r
+Record-Route: <sip:RbTXf3BzQ1geEgEK8SkiE8QK8SFHE8Q=@10.241.41.34:8080;transport=ws;r2=on;lr>\r
+Record-Route: <sip:RbTXf3BzQ1geEgEK8SkiE8QK8SFHE8Q=@10.241.41.34;r2=on;lr>\r
+Record-Route: <sip:10.241.33.71;lr=on>\r
+Via: SIP/2.0/WS  10.241.41.34:8080;branch=z9hG4bKa47d.50cc1e0e096d732b791efa0b9e7a5b24.0\r
+Via: SIP/2.0/UDP 10.241.33.71;branch=z9hG4bKa47d.95af822c9c39fd253a8cc22e6d0a0d37.2\r
+v:SIP/2.0/UDP 10.241.41.243:6060;received=10.241.41.243;rport=6060;branch=z9hG4bKQ5589geNFU15p\r
+Max-Forwards:65\r
+f:\"+18653218193\"<sip:+18653218193@10.241.41.243>;tag=705KDg3m1pXyQ\r
+t:<sip:18653552812@prod.tncp.textnow.com>\r
+i:b8f59c46-e35d-123a-b2af-12c01d4b61df\r
+CSeq:45841827 INVITE\r
+m:<sip:mod_sofia@10.241.41.243:6060>\r
+User-Agent:internal\r
+Allow:INVITE,ACK,BYE,CANCEL,OPTIONS,MESSAGE,INFO,UPDATE,REGISTER,REFER,NOTIFY\r
+k:path,replaces\r
+u:talk,hold,conference,refer\r
+c:application/sdp\r
+Content-Disposition:session\r
+l:1127\r
+X-Provider-1:1\r
+X-VerStat:OK;Orig-OK;Dest-OK\r
+X-Push-ID:10db0d96-e4b5-4cee-830d-0f5dc4a89588\r
+X-UUID:3fe2f9ce-8723-44a0-806e-474fb67593d1\r
+X-Tracing-ID:10db0d96-e4b5-4cee-830d-0f5dc4a89588\r
+X-ALEG-CID:258527856_134194231@206.147.72.24\r
+X-FS-Support:update_display,send_info\r
+Route: <sip:f2c7cqt8@7acp371q6b3d.invalid;transport=ws>\r
+X-Registrar:sip-proxy-ws2.tncp\r
+\r
+v=0\r
+o=FreeSWITCH 1640768479 1640768480 IN IP4 184.73.65.105\r
+s=FreeSWITCH\r
+c=IN IP4 184.73.65.105\r
+t=0 0\r
+a=msid-semantic: WMS 2iBjCFCuIhvHdhPl1RdV3eBqwwwrIe6B\r
+m=audio 22760 RTP/SAVPF 0 102 3 101 103\r
+a=rtpmap:0 PCMU/8000\r
+a=rtpmap:102 opus/48000/2\r
+a=fmtp:102 useinbandfec=1; maxaveragebitrate=14400; maxplaybackrate=8000; sprop-maxcapturerate=8000; ptime=20; minptime=10; maxptime=120\r
+a=rtpmap:3 GSM/8000\r
+a=rtpmap:101 telephone-event/8000\r
+a=rtpmap:103 telephone-event/48000\r
+a=fingerprint:sha-256 82:1A:91:D1:35:3E:FD:5F:59:51:EF:DF:5A:C9:F4:25:DF:90:28:B6:B6:3B:D2:E1:D7:71:FD:6C:FE:CA:56:55\r
+a=setup:actpass\r
+a=rtcp-mux\r
+a=rtcp:22760 IN IP4 184.73.65.105\r
+a=ssrc:316892207 cname:nyKP4caCjvanCQyt\r
+a=ssrc:316892207 msid:2iBjCFCuIhvHdhPl1RdV3eBqwwwrIe6B a0\r
+a=ssrc:316892207 mslabel:2iBjCFCuIhvHdhPl1RdV3eBqwwwrIe6B\r
+a=ssrc:316892207 label:2iBjCFCuIhvHdhPl1RdV3eBqwwwrIe6Ba0\r
+a=ice-ufrag:xCfrGHH333lC8i3l\r
+a=ice-pwd:GD1BG13Pm32OKr87TeoqMVjG\r
+a=candidate:4853572448 1 udp 2130706431 184.73.65.105 22760 typ host generation 0\r
+a=candidate:4853572448 2 udp 2130706431 184.73.65.105 22760 typ host generation 0\r
+a=ptime:20\r
+
+
+[2021-12-29T15:20:46.865Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - SIP/2.0 100 Trying\r
+Via: SIP/2.0/WS  10.241.41.34:8080;branch=z9hG4bKa47d.50cc1e0e096d732b791efa0b9e7a5b24.0\r
+Via: SIP/2.0/UDP 10.241.33.71;branch=z9hG4bKa47d.95af822c9c39fd253a8cc22e6d0a0d37.2\r
+Via: SIP/2.0/UDP 10.241.41.243:6060;received=10.241.41.243;rport=6060;branch=z9hG4bKQ5589geNFU15p\r
+To: <sip:18653552812@prod.tncp.textnow.com>\r
+From: \"+18653218193\"<sip:+18653218193@10.241.41.243>;tag=705KDg3m1pXyQ\r
+Call-ID: b8f59c46-e35d-123a-b2af-12c01d4b61df\r
+CSeq: 45841827 INVITE\r
+Supported: gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:46.870Z] INFO - sip.dialog - new UAS dialog created with status EARLY
+[2021-12-29T15:20:46.872Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - SIP/2.0 180 Ringing\r
+Record-Route: <sip:RbTXf3BzQ1geEgEK8SkiE8QK8SFHE8Q=@10.241.41.34:8080;transport=ws;r2=on;lr>\r
+Record-Route: <sip:RbTXf3BzQ1geEgEK8SkiE8QK8SFHE8Q=@10.241.41.34;r2=on;lr>\r
+Record-Route: <sip:10.241.33.71;lr=on>\r
+Via: SIP/2.0/WS  10.241.41.34:8080;branch=z9hG4bKa47d.50cc1e0e096d732b791efa0b9e7a5b24.0\r
+Via: SIP/2.0/UDP 10.241.33.71;branch=z9hG4bKa47d.95af822c9c39fd253a8cc22e6d0a0d37.2\r
+Via: SIP/2.0/UDP 10.241.41.243:6060;received=10.241.41.243;rport=6060;branch=z9hG4bKQ5589geNFU15p\r
+To: <sip:18653552812@prod.tncp.textnow.com>;tag=vg2lads1lc\r
+From: \"+18653218193\"<sip:+18653218193@10.241.41.243>;tag=705KDg3m1pXyQ\r
+Call-ID: b8f59c46-e35d-123a-b2af-12c01d4b61df\r
+CSeq: 45841827 INVITE\r
+Contact: <sip:18653552812@prod.tncp.textnow.com;gr=urn:uuid:429fffd5-d27b-43e7-b244-b753d808b710>\r
+Supported: gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:46.875Z] DEBUG - SipJsCall - createCallObject() called with id : 122e2dad-3f26-4405-a461-5f36e6ce1644, callee : , caller : +18653218193, callDirection : incoming, method : null
+[2021-12-29T15:20:46.877Z] DEBUG - SipJsCall - setInviteSession: SIP Call-ID = [b8f59c46-e35d-123a-b2af-12c01d4b61df]
+[2021-12-29T15:20:46.879Z] DEBUG - SipJsCallAdapter - _addCall() called for call with callId: 122e2dad-3f26-4405-a461-5f36e6ce1644
+[2021-12-29T15:20:46.880Z] INFO - CallDetailsLog - CALL_DETAILS_CALL_STARTED: Incoming, b8f59c46-e35d-123a-b2af-12c01d4b61df, +18653218193
+[2021-12-29T15:20:46.882Z] DEBUG - phoneServiceModule/eventRouter - calling event: INCOMING_CALL_STARTED, callId = [122e2dad-3f26-4405-a461-5f36e6ce1644]
+[2021-12-29T15:20:46.887Z] DEBUG - CallManager - addCall() called with callObject id = 122e2dad-3f26-4405-a461-5f36e6ce1644
+[2021-12-29T15:20:46.960Z] WARN - incomingCallHandler - Notification failed
+[2021-12-29T15:20:51.461Z] INFO - phoneService - ending call: id = [122e2dad-3f26-4405-a461-5f36e6ce1644]
+[2021-12-29T15:20:51.464Z] DEBUG - SipJsCallAdapter - hangup() called for callId: 122e2dad-3f26-4405-a461-5f36e6ce1644
+[2021-12-29T15:20:51.466Z] INFO - sip.inviteservercontext - rejecting RTCSession
+[2021-12-29T15:20:51.469Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - SIP/2.0 480 Temporarily Unavailable\r
+Via: SIP/2.0/WS  10.241.41.34:8080;branch=z9hG4bKa47d.50cc1e0e096d732b791efa0b9e7a5b24.0\r
+Via: SIP/2.0/UDP 10.241.33.71;branch=z9hG4bKa47d.95af822c9c39fd253a8cc22e6d0a0d37.2\r
+Via: SIP/2.0/UDP 10.241.41.243:6060;received=10.241.41.243;rport=6060;branch=z9hG4bKQ5589geNFU15p\r
+To: <sip:18653552812@prod.tncp.textnow.com>;tag=vg2lads1lc\r
+From: \"+18653218193\"<sip:+18653218193@10.241.41.243>;tag=705KDg3m1pXyQ\r
+Call-ID: b8f59c46-e35d-123a-b2af-12c01d4b61df\r
+CSeq: 45841827 INVITE\r
+Supported: gruu, outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:51.478Z] DEBUG - SipJsCallAdapter - inviteSession received terminated event for callId: 122e2dad-3f26-4405-a461-5f36e6ce1644, reason: Temporarily Unavailable
+[2021-12-29T15:20:51.486Z] INFO - CallDetailsLog - CALL_DETAILS_CALL_ENDED: CLIENT_OTHER, sipStatusCode: null
+[2021-12-29T15:20:51.487Z] INFO - CallDetailsLog - --[call ended]---------------------------------------------------------------------------------------
+[2021-12-29T15:20:51.487Z] INFO - CallDetailsLog - info:                    from +18653218193 with ID [b8f59c46-e35d-123a-b2af-12c01d4b61df]
+[2021-12-29T15:20:51.487Z] INFO - CallDetailsLog - MOS:                     null
+[2021-12-29T15:20:51.487Z] INFO - CallDetailsLog - duration:                NaNms
+[2021-12-29T15:20:51.487Z] INFO - CallDetailsLog - disposition, sip status: CLIENT_OTHER, null
+[2021-12-29T15:20:51.488Z] INFO - CallDetailsLog - client:                  TN_WEB, 21.46.2-9076, Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36
+[2021-12-29T15:20:51.488Z] INFO - CallDetailsLog - network @start:          DL:3.8, DLM:Infinity, ET:4g, RTT:50, T:wifi
+[2021-12-29T15:20:51.489Z] WARN - CallDetailsLog - logging to kinesis failed: 
+[2021-12-29T15:20:51.489Z] DEBUG - SipJsCallAdapter - resetting _connectionAttempts to 0
+[2021-12-29T15:20:51.489Z] DEBUG - SipJsCallAdapter - ending call
+[2021-12-29T15:20:51.489Z] DEBUG - SipJsCall - callId: 122e2dad-3f26-4405-a461-5f36e6ce1644, callObject state: FINISHED, sipCallId: b8f59c46-e35d-123a-b2af-12c01d4b61df
+[2021-12-29T15:20:51.490Z] DEBUG - phoneServiceModule/eventRouter - calling event: ONGOING_CALL_UPDATED, callId = [122e2dad-3f26-4405-a461-5f36e6ce1644], state = [FINISHED]
+[2021-12-29T15:20:51.491Z] DEBUG - SipJsCallAdapter - _endSipJsCall() called
+[2021-12-29T15:20:51.491Z] DEBUG - SipJsCall - callId: 122e2dad-3f26-4405-a461-5f36e6ce1644, callObject state: FINISHED, sipCallId: b8f59c46-e35d-123a-b2af-12c01d4b61df
+[2021-12-29T15:20:51.491Z] DEBUG - phoneServiceModule/eventRouter - calling event: CALL_ENDED, callId = [122e2dad-3f26-4405-a461-5f36e6ce1644]
+[2021-12-29T15:20:51.492Z] DEBUG - CallManager - removeCall() called with callId = 122e2dad-3f26-4405-a461-5f36e6ce1644
+[2021-12-29T15:20:51.506Z] DEBUG - SipJsCallAdapter - _removeCall() called for call with callId: 122e2dad-3f26-4405-a461-5f36e6ce1644
+[2021-12-29T15:20:51.507Z] INFO - sip.inviteservercontext - closing INVITE session b8f59c46-e35d-123a-b2af-12c01d4b61df705KDg3m1pXyQ
+[2021-12-29T15:20:51.507Z] INFO - sip.dialog - dialog b8f59c46-e35d-123a-b2af-12c01d4b61dfvg2lads1lc705KDg3m1pXyQ deleted
+[2021-12-29T15:20:51.508Z] DEBUG - SipJsCallAdapter - inviteSession received terminated event for callId: 122e2dad-3f26-4405-a461-5f36e6ce1644, reason: null
+[2021-12-29T15:20:51.508Z] INFO - CallDetailsLog - CALL_DETAILS_CALL_ENDED: REMOTE_OTHER, sipStatusCode: null
+[2021-12-29T15:20:51.508Z] DEBUG - SipJsCallAdapter - resetting _connectionAttempts to 0
+[2021-12-29T15:20:51.508Z] DEBUG - SipJsCallAdapter - terminated called after call was already torn down
+[2021-12-29T15:20:51.558Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - ACK sip:18653552812@prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WS  10.241.41.34:8080;branch=z9hG4bKa47d.50cc1e0e096d732b791efa0b9e7a5b24.0\r
+Max-Forwards:65\r
+f:\"+18653218193\"<sip:+18653218193@10.241.41.243>;tag=705KDg3m1pXyQ\r
+To: <sip:18653552812@prod.tncp.textnow.com>;tag=vg2lads1lc\r
+i:b8f59c46-e35d-123a-b2af-12c01d4b61df\r
+CSeq:45841827 ACK\r
+l: 0\r
+Route: <sip:f2c7cqt8@7acp371q6b3d.invalid;transport=ws>\r
+\r
+
+"
+"[2021-12-29T15:20:57.113Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - OPTIONS sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;branch=z9hG4bK7859723\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=o85lkjrvps\r
+Call-ID: hna916c39toffqmgqrr3\r
+CSeq: 2305 OPTIONS\r
+Supported: outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:20:57.233Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 200 OK\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;branch=z9hG4bK7859723;rport=20024;received=10.241.48.222\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=23597fe29f9d45d84165b33294bbd0d8.5bcf0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=o85lkjrvps\r
+Call-ID: hna916c39toffqmgqrr3\r
+CSeq: 2305 OPTIONS\r
+Server: sip-proxy-ws2.tncp\r
+Content-Length: 0\r
+\r
+
+"
+"[2021-12-29T15:21:16.727Z] LOG - messageNotifications - Sent notification for 44696117303
+[2021-12-29T15:21:16.729Z] WARN - messageNotifications - Notification failed"
+"[2021-12-29T15:21:27.070Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Outgoing - OPTIONS sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com SIP/2.0\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;branch=z9hG4bK8828629\r
+Max-Forwards: 70\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=t3908p9mfo\r
+Call-ID: hna91ls1rielraqsd1ul\r
+CSeq: 3003 OPTIONS\r
+Supported: outbound\r
+User-Agent: SIP.js/0.11.6\r
+Content-Length: 0\r
+\r
+
+
+[2021-12-29T15:21:27.140Z] INFO - CallDetailsLog - CALL_DETAILS_SIP_MESSAGE: Incoming - SIP/2.0 200 OK\r
+Via: SIP/2.0/WSS 7acp371q6b3d.invalid;branch=z9hG4bK8828629;rport=20024;received=10.241.48.222\r
+To: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=23597fe29f9d45d84165b33294bbd0d8.5bcf0000\r
+From: <sip:18653552812_1iw94olqq3tNmSeS3lVz6sOu8Rd7191XX4O6lbxPSrm0@prod.tncp.textnow.com>;tag=t3908p9mfo\r
+Call-ID: hna91ls1rielraqsd1ul\r
+CSeq: 3003 OPTIONS\r
+Server: sip-proxy-ws2.tncp\r
+Content-Length: 0\r
+\r
+
+"
